@@ -1,0 +1,319 @@
+/* General Styles */
+
+/* Body and general page styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7fafc;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global font and text styling */
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Service Section Styles */
+#services {
+  background-color: #f7fafc;
+  padding: 5rem 2rem;
+}
+
+#services .heading {
+  font-size: 3rem;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Service Card Animations */
+
+/* Define a keyframe animation for the initial load effect */
+@keyframes fadeInUpBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95); /* Start below and slightly scaled down */
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(-10px) scale(1.05); /* Cards slightly rise up and grow */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* Finish at normal position with normal scale */
+  }
+}
+
+/* Apply the fadeInUpBounce animation to the cards */
+.service-card {
+  animation: fadeInUpBounce 0.8s ease-out forwards;
+  opacity: 0; /* Make sure cards are initially invisible */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  margin-bottom: 1.5rem; /* Space between cards */
+  position: relative;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.service-card:nth-child(even) {
+  animation-delay: 0.3s; /* Delay the even cards */
+}
+
+.service-card:nth-child(odd) {
+  animation-delay: 0.6s; /* Delay the odd cards more */
+}
+
+/* Hover effect for service cards with more dynamic transformation */
+.service-card:hover {
+  transform: scale(1.05) rotate(2deg); /* Slight rotation and scaling */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for hover effect */
+  filter: brightness(1.1); /* Make the card brighter */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, rotate 0.2s ease;
+}
+
+/* Add a 3D feel for the card content */
+.service-card:hover .service-card-content {
+  transform: translateY(-5px); /* Move the content up a bit */
+  transition: transform 0.3s ease-out;
+}
+
+/* Adding extra shadow effect on hover */
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(0.9);
+  z-index: -1;
+  transition: opacity 0.3s ease-out;
+}
+
+/* Additional hover effects to create 3D-like feel */
+.service-card:hover::before {
+  opacity: 0.3;
+  transform: translateY(0) scale(1.1);
+  transition: transform 0.2s ease-out;
+}
+
+/* Optional: Darken the card background when hovered */
+.service-card:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the service card content */
+.service-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.service-card a {
+  font-size: 1rem;
+  color: #ff4b5c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.service-card a:hover {
+  text-decoration: underline;
+}
+
+/* Service Card Layout - Grid */
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .service-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Team Section Styles */
+.team-section {
+  background-color: #f7f9fc;
+  padding: 4rem 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-section-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.team-section-subheading {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Team Member Card */
+.team-member-card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  animation: float 3s ease-in-out infinite;
+}
+
+.team-member-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.team-member-card:hover .team-member-image {
+  transform: scale(1.05);
+}
+
+.team-member-info {
+  padding: 1.5rem;
+}
+
+.team-member-name {
+  font-size: 1.5rem;
+  color: #1e40af;
+  margin-bottom: 0.25rem;
+}
+
+.team-member-title {
+  font-size: 1.125rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.team-member-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Floating Background Particles */
+.team-section::before,
+.team-section::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(30, 64, 175, 0.1), transparent 70%);
+  filter: blur(50px);
+  z-index: -1;
+  animation: floatingBackground 5s ease-in-out infinite;
+}
+
+.team-section::before {
+  top: 20%;
+  left: 50%;
+}
+
+.team-section::after {
+  bottom: 10%;
+  right: 50%;
+  width: 200px;
+  height: 200px;
+  animation-direction: reverse;
+}
+
+@keyframes floatingBackground {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, -10px);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Call To Action Styles */
+.cta-section {
+  background-color: #f7f7f7;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 1.5rem;
+}
+
+.cta-section button {
+  background-color: #ff4b5c;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.cta-section button:hover {
+  background-color: #e63946;
+}
