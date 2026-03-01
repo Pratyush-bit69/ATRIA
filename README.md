@@ -1,79 +1,58 @@
-# Getting Started with Create React App
+﻿# ATRIA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Project repository containing implementation files and supporting assets.
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+- General Project Files
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Repository Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- D:\Amd\repos_sync\ATRIA\.gitignore
+- D:\Amd\repos_sync\ATRIA\my-project\.gitignore
+- D:\Amd\repos_sync\ATRIA\my-project\package.json
+- D:\Amd\repos_sync\ATRIA\my-project\package-lock.json
+- D:\Amd\repos_sync\ATRIA\my-project\README.md
+- D:\Amd\repos_sync\ATRIA\my-project\tailwind.config.js
+- D:\Amd\repos_sync\ATRIA\package.json
+- D:\Amd\repos_sync\ATRIA\package-lock.json
+- D:\Amd\repos_sync\ATRIA\public\favicon.ico
+- D:\Amd\repos_sync\ATRIA\public\index.html
+- D:\Amd\repos_sync\ATRIA\public\logo192.png
+- D:\Amd\repos_sync\ATRIA\public\logo512.png
+- D:\Amd\repos_sync\ATRIA\public\manifest.json
+- D:\Amd\repos_sync\ATRIA\public\robots.txt
+- D:\Amd\repos_sync\ATRIA\README.md
+- D:\Amd\repos_sync\ATRIA\src\App.css
+- D:\Amd\repos_sync\ATRIA\src\App.js
+- D:\Amd\repos_sync\ATRIA\src\App.test.js
+- D:\Amd\repos_sync\ATRIA\src\blog.css
+- D:\Amd\repos_sync\ATRIA\src\blog.js
+- D:\Amd\repos_sync\ATRIA\src\CloudSolutions.js
+- D:\Amd\repos_sync\ATRIA\src\contact.js
+- D:\Amd\repos_sync\ATRIA\src\ContactForm.css
+- D:\Amd\repos_sync\ATRIA\src\ElevateSection.js
+- D:\Amd\repos_sync\ATRIA\src\Events.js
 
-### `npm test`
+## Quick Start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Review repository files and run using the relevant toolchain for this project.
+## Data & Assets
 
-### `npm run build`
+- D:\Amd\repos_sync\ATRIA\package-lock.json
+- D:\Amd\repos_sync\ATRIA\package.json
+- D:\Amd\repos_sync\ATRIA\my-project\package-lock.json
+- D:\Amd\repos_sync\ATRIA\my-project\package.json
+- D:\Amd\repos_sync\ATRIA\public\logo192.png
+- D:\Amd\repos_sync\ATRIA\public\logo512.png
+- D:\Amd\repos_sync\ATRIA\public\manifest.json
+- D:\Amd\repos_sync\ATRIA\src\images\aiml.jpg
+- D:\Amd\repos_sync\ATRIA\src\images\atria phot.jpeg
+- D:\Amd\repos_sync\ATRIA\src\images\django.jpg
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Notes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
----
-
-## Maintainer Update (March 2026)
-
-This README was refreshed for consistency across repositories in this GitHub profile.
-
-- Documentation baseline updated
-- Project-specific implementation details remain in code and repository history
+- README refreshed and standardized on March 2026.
+- Keep this file aligned with actual implementation updates.
